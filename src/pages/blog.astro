@@ -14,6 +14,12 @@ const posts = await Astro.glob("../posts/*.md");
                     <Card>
                         <h2>{post.frontmatter.title}</h2>
                         <p>{post.frontmatter.excerpt}</p>
+                        <p>
+                            by <strong>{post.frontmatter.author}</strong> on
+                            <em>
+                                {new Date(post.frontmatter.date).toDateString()}
+                            </em>
+                        </p>
                         <a href={`/${post.frontmatter.slug}`} class="btn">
                             Read More
                         </a>
