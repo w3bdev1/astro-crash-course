@@ -20,7 +20,10 @@ const contents = [
     <div class="container">
         {
             contents.map((content) => (
-                <Card title={content.title} body={content.body} />
+                <Card>
+                    <h3>{content.title}</h3>
+                    <p>{content.body}</p>
+                </Card>
             ))
         }
     </div>
