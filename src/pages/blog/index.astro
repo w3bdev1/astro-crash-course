@@ -1,8 +1,8 @@
 ---
-import Card from "../components/Card.astro";
-import Showcase from "../components/Showcase.astro";
-import Layout from "../layouts/Layout.astro";
-const posts = await Astro.glob("../posts/*.md");
+import Card from "../../components/Card.astro";
+import Showcase from "../../components/Showcase.astro";
+import Layout from "../../layouts/Layout.astro";
+const posts = await Astro.glob("./posts/*.md");
 ---
 
 <Layout title="Astro Blog">
@@ -20,7 +20,7 @@ const posts = await Astro.glob("../posts/*.md");
                                 {new Date(post.frontmatter.date).toDateString()}
                             </em>
                         </p>
-                        <a href={`/${post.frontmatter.slug}`} class="btn">
+                        <a href={`/blog/${post.frontmatter.slug}`} class="btn">
                             Read More
                         </a>
                     </Card>

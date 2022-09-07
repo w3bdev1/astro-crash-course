@@ -2,7 +2,7 @@
 title: Post 1
 slug: post-1
 excerpt: Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Veniam, vel quas repudiandae optio voluptatibus dolore maxime sed nisi ad, quod exercitationem.
-date: Sep 6, 2022
+pubDate: Sep 6, 2022
 author: John Doe
 ---
 
